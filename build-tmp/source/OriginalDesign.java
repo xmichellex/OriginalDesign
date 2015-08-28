@@ -32,7 +32,6 @@ public void draw()
 
  
 public void beam() {
-	
 	int a = (int)(Math.random()*256);
     int b = (int)(Math.random()*256);
     int c = (int)(Math.random()*256);
@@ -41,6 +40,13 @@ public void beam() {
      x++; 
      w++; 
 
+     if(x > 300) {
+     	background(255, 255, 0);
+     	x=30; 
+     	w=w-400;
+     	x++;
+     	w++;
+     }
 }
 
 public void light() {
